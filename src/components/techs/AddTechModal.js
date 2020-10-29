@@ -28,10 +28,8 @@ const AddTechModal = () => {
               name="firstName"
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
+              placeholder="First Name"
             />
-            <label htmlFor="firstName" className="active">
-              First Name
-            </label>
           </div>
         </div>
         <div className="row">
@@ -41,10 +39,8 @@ const AddTechModal = () => {
               name="lastName"
               value={lastName}
               onChange={e => setLastName(e.target.value)}
+              placeholder="Last Name"
             />
-            <label htmlFor="lastName" className="active">
-              Last Name
-            </label>
           </div>
         </div>
       </div>
