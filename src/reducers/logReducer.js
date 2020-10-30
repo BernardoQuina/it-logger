@@ -1,5 +1,6 @@
 import {
   GET_LOGS,
+  SEARCH_LOGS,
   SET_LOADING,
   LOGS_ERROR,
   ADD_LOG,
@@ -43,6 +44,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         logs: state.logs.map(log => log.id === action.payload.id ? action.payload : log)
+      }
+
+    case SEARCH_LOGS:
+      return {
+        ...state,
+        logs: action.payload
       }
 
     case SET_CURRENT:

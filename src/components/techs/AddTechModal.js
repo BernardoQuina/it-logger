@@ -29,6 +29,7 @@ const AddTechModal = () => {
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
               placeholder="First Name"
+              style={{ borderBottomColor: "rgb(43, 148, 233)" }}
             />
           </div>
         </div>
@@ -40,6 +41,7 @@ const AddTechModal = () => {
               value={lastName}
               onChange={e => setLastName(e.target.value)}
               placeholder="Last Name"
+              style={{ borderBottomColor: "rgb(43, 148, 233)" }}
             />
           </div>
         </div>

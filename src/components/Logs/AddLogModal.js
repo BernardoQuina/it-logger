@@ -45,6 +45,7 @@ const AddLogModal = ({ addLog }) => {
               value={message}
               onChange={e => setMessage(e.target.value)}
               placeholder="Log Message"
+              style={{ borderBottomColor: "rgb(43, 148, 233)" }}
             />
           </div>
         </div>
