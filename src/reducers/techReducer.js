@@ -1,4 +1,3 @@
-import { act } from 'react-dom/test-utils';
 import {
   GET_TECHS,
   ADD_TECH,
@@ -26,6 +25,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         techs: [...state.techs, action.payload],
+        loading: false
+      }
+
+    case DELETE_TECH:
+      return {
+        ...state,
+        techs: state.techs.filter(tech => tech.id !== action.payload),
         loading: false
       }
 
