@@ -36,8 +36,8 @@ Logs.propTypes = {
   getLogs: PropTypes.func.isRequired
 }
 
-const masStateToProps = state => ({
+const mapStateToProps = state => ({
   log: state.log
 })
 
-export default connect(masStateToProps, { getLogs })(Logs);
+export default connect(mapStateToProps, { getLogs })(Logs);

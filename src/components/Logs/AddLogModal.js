@@ -44,10 +44,8 @@ const AddLogModal = ({ addLog }) => {
               name='message'
               value={message}
               onChange={e => setMessage(e.target.value)}
+              placeholder="Log Message"
             />
-            <label htmlFor="message" className="active">
-              Log Message
-            </label>
           </div>
         </div>
         <div className="row">
